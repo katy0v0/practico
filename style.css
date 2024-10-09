@@ -78,3 +78,141 @@ header {
     margin: 0 10px;
     height: 50px;
 }
+@media (min-width: 1024px){
+    .top-bar{
+        padding:0 30px;
+    }
+    .menu ul li{
+        margin-right: 60px;
+    }
+    .overlay h1{
+        font-size: 60px;
+    }
+    .brands img{
+        height: 90px;
+    }
+    #montañistaConChaquetaRoja{
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px){
+    .menu ul {
+        flex-direction: column;
+        align-items:center;
+    }
+       
+    .menu ul li {
+        margin-right: 0; 
+        margin-bottom: 10px;
+    }  
+    
+    .right-menu {
+        justify-content: center;
+        margin-top: 10px;
+    }   
+    
+    .overlay h1 {
+        font-size: 8vw;
+            }
+            
+    .brands img {
+        height: 40px;
+    }
+    
+    .menu{
+        display: flex;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+    }
+    
+    .nav-menu a {
+        padding: 15px;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+    
+    .nav-menu a:hover {
+        background-color: #555;
+    }
+}
+@media (max-width: 480px){
+    .overlay h1 {
+        font-size: 10vw;
+    }     
+    
+    .brands img {
+        height: 30px;
+    }
+}
+@media (max-width: 360px){
+    .top-bar {
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+    }      
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }       
+    
+    .menu ul li {
+         margin: 10px 0;
+    }       
+    
+    .overlay h1 {
+        font-size: 28px;
+    }  
+    
+    .brands {
+        flex-direction: column;
+        align-items: center;
+    }   
+    .brands img {
+        margin: 10px 0;
+        height: 60px;
+    }  
+    #montañistaConChaquetaRoja{
+        height: 200px; /* Ajust
+        margin-riga la altura para pantallas pequeñas */
+    }
+}
+@media(min-width:761px) and (max-width:651px){
+    .overlay,.brands{
+         height: 40px;
+         width: 40px;
+    }
+ }
+@media(max-width:650px){
+   .contenedor{
+        flex-direction: column;
+    }
+    .overlay, .brands{
+        max-width: 45px;
+        max-height: 45px;
+    }
+    .montañistaConChaquetaRoja{
+        max-width: 508px;
+    }
+}
+@media(max-witdh:740px){
+    .overlay{
+        height: 60px;
+        width: 60px;
+    }
+}
